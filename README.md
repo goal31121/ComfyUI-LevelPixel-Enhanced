@@ -4,16 +4,6 @@
 
 The purpose of this package is to collect the most necessary and atomic nodes for working with LLM and VLM models with GGUF format. Installation and maintenance of LLM and VLM nodes based on LLaVA is more complex, so this node package should now be installed separately from the main Level Pixel node package.
 
-*[Our dream is to see the possibilities for convenient creation of full automation in ComfyUI workflows. We will try to get closer to it.](https://www.patreon.com/LevelPixel)*
-
-**In this Level Pixel Advanced node pack you will find:**
-LLM nodes, LLaVa and other VLM nodes, Autotagger, RAM autotagger, WD Autotagger
-
-Recommend that you install the main node package from Level Pixel: 
-[https://github.com/LevelPixel/ComfyUI-LevelPixel](https://github.com/LevelPixel/ComfyUI-LevelPixel)
-
-The official repository of the current node package is located at this link: 
-[https://github.com/LevelPixel/ComfyUI-LevelPixel-Advanced](https://github.com/LevelPixel/ComfyUI-LevelPixel-Advanced)
 
 **Like our nodes? Then we'd be happy to see your star on our GitHub repository!**
 
@@ -58,21 +48,6 @@ It is also recommended to update ComfyUI to the latest version (including all de
 Install [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and do steps introduced there to install this repo 'ComfyUI-LevelPixel-Advanced'.  
 The nodes of the current package will be updated automatically when you click "Update ALL" in ComfyUI Manager.
 
-### Alternative installation package
-
-Clone the repository:  
-`git clone https://github.com/LevelPixel/ComfyUI-LevelPixel-Advanced.git`  
-to your ComfyUI `custom_nodes` directory
-
-The script will then automatically install all custom scripts and nodes.
-It will attempt to use symlinks and junctions to prevent having to copy files and keep them up to date.
-
-- For uninstallation:  
-  - Delete the cloned repo in `custom_nodes`
-  - Ensure `web/extensions/levelpixeladvanced` has also been removed
-- For manual update:
-  - Navigate to the cloned repo e.g. `custom_nodes/ComfyUI-LevelPixel-Advanced`
-  - `git pull`
 
 ### Troubleshooting
 
@@ -193,21 +168,7 @@ Close ComfyUI and run the script at `.\ComfyUI\custom_nodes\ComfyUI-LevelPixel-A
 
 The core functionality is taken from [RemBG nodes for ComfyUI](https://github.com/Loewen-Hob/rembg-comfyui-node-better) and from [ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) and belongs to its authors.
 
-### Recognize Anything Model (RAM++)
 
-The counterpart to Segment Anything Model (SAM)
-
-This is an image recognition node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) based on the RAM++ model from [xinyu1205](https://huggingface.co/xinyu1205).
-
-- [https://huggingface.co/xinyu1205/recognize-anything-plus-model](https://huggingface.co/xinyu1205/recognize-anything-plus-model)
-- [https://github.com/xinyu1205/recognize-anything](https://github.com/xinyu1205/recognize-anything)
-- This node outputs a string of tags with all the recognized objects and elements in the image
-- 3 different models.
-- RAM and RAM++ outputs tags in English and Chinese language
-
-Furthermore you need to download the [RAM](https://huggingface.co/xinyu1205/recognize_anything_model/resolve/main/ram_swin_large_14m.pth), [RAM++](https://huggingface.co/xinyu1205/recognize-anything-plus-model/resolve/main/ram_plus_swin_large_14m.pth) and [tag2text](https://huggingface.co/xinyu1205/recognize_anything_model/resolve/main/tag2text_swin_14m.pth) models and place it in the /ComfyUI/models/rams/ folder or use the [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager) model downloader.
-
-You can also configure the location in 'extra\_model\_paths.yaml' in the ComfyUI folder.
 
 ## Update History
 
